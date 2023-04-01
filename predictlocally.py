@@ -31,7 +31,7 @@ while True:
         label = 'not yawn'
     
     # Draw the label on the frame
-    cv2.putText(frame, str(prediction[0]), (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+    cv2.putText(frame, label, (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
     
     # Show the frame
     cv2.imshow('frame', frame)
