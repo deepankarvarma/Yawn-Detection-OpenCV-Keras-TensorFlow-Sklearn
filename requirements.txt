@@ -1,5 +1,8 @@
 keras==2.12.0rc0
 numpy==1.24.1
 opencv_python==4.7.0.68
+Pillow==9.5.0
 scikit_learn==1.2.2
 streamlit==1.20.0
+tensorflow==2.12.0
+tensorflow_intel==2.12.0rc0
