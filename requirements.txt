@@ -1,5 +1,6 @@
-keras==2.12.0rc0
+keras==2.9.0rc0
 numpy==1.24.1
-opencv_python_headless==4.7.0.68
+opencv-python-headless==4.7.0.68
 scikit_learn==1.2.2
 streamlit==1.20.0
+protobuf==3.9.2
