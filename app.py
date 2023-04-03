@@ -1,5 +1,7 @@
 import streamlit as st
 import cv2
+from io import BytesIO
+
 import numpy as np
 from keras.models import load_model
 
@@ -25,8 +27,14 @@ def app():
     if uploaded_file is not None:
         # Read the image
         img = cv2.imdecode(np.fromstring(uploaded_file.read(), np.uint8), 1)
+        # Encode the image in JPEG format.
+        ret, buffer = cv2.imencode('.jpg', img)
+
+        # Convert the encoded image data to a byte stream.
+        byte_stream = BytesIO(buffer)
+        
         # Display the image
-        st.image(img, caption='Uploaded Image', use_column_width=True)
+        st.image(byte_stream, caption='Uploaded Image', use_column_width=True)
         # Preprocess the image
         img = preprocess_image(img)
 
