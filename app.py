@@ -3,6 +3,10 @@ import cv2
 from io import BytesIO
 
 import numpy as np
+import os
+
+# Set the backend to TensorFlow
+os.environ['KERAS_BACKEND'] = 'tensorflow'
 from keras.models import load_model
 
 # Load the trained model
