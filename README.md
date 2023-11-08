@@ -70,3 +70,6 @@ The yawning detection model, trained on the Yawn Dataset, can accurately identif
 
 This project is licensed under the [MIT License](LICENSE).
 
+## This repository code for model generation and detects yawning from live camera stream.
+
+### Dataset Download Link :- https://www.kaggle.com/datasets/davidvazquezcic/yawn-dataset
